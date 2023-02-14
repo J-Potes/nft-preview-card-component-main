@@ -15,3 +15,61 @@ body {
     min-height: 100vh;
     background-color: var(--mainBG);
 }
+
+p {
+    font-family: var(--mainFont);
+    color: var(--softBlue);
+    font-size: 18px;
+}
+
+/** Card **/
+
+.card {
+    background-color: var(--cardBG);
+    max-width: 300px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/** Card__info **/
+
+.card__info {
+
+}
+
+.card__info--title {
+    font-family: var(--mainFont);
+    color: var(--white);
+    font-size: 22px;
+}
+
+/** Card details**/
+
+.card__details {
+    display: flex;
+    flex-direction: row;
+}
+
+.card__details--price, .card__details--time{
+    display: flex;
+    align-items: center;
+}
+
+.card__details--price img {
+    height: 20px;
+}
+
+.card__details--time{
+    margin-left: 100px;
+}
+
+.card__details--time p {
+    font-size: 16px;
+    margin-left: 7px;
+}
