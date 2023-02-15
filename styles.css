@@ -14,6 +14,10 @@
 body {
     min-height: 100vh;
     background-color: var(--mainBG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -39,14 +43,14 @@ p {
 
 /** Card__info **/
 
-.card__info {
-
-}
-
 .card__info--title {
     font-family: var(--mainFont);
     color: var(--white);
     font-size: 22px;
+}
+
+.card__info--text {
+    font-weight: 300;
 }
 
 /** Card details**/
@@ -54,6 +58,7 @@ p {
 .card__details {
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
 }
 
 .card__details--price, .card__details--time{
@@ -62,14 +67,46 @@ p {
 }
 
 .card__details--price img {
-    height: 20px;
+    height: 18px;
+}
+
+.card__details--price p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: var(--cyan);
+    font-weight: 400;
 }
 
 .card__details--time{
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .card__details--time p {
     font-size: 16px;
     margin-left: 7px;
+}
+
+/** Card Seller **/
+
+.card__seller {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--line);
+    padding-top: 5px;
+}
+
+.card__seller--image {
+    height: 32px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.card__seller--text {
+    margin-left: 18px;
+    font-size: 16px;
+
+}
+
+.card__seller--text span {
+    color: var(--white);
 }
