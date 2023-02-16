@@ -1,10 +1,11 @@
 :root {
     --softBlue: hsl(215, 51%, 70%);
-    --cyan: hsl(178, 100%, 50%);
+    --cyan: rgb(0, 255, 247);
     --mainBG: hsl(217, 54%, 11%);
     --cardBG: hsl(216, 50%, 16%);
     --line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
+    --cyan2: rgba(0, 255, 247,0.5);
 
     --mainFont: 'Outfit', sans-serif;
 }
@@ -23,7 +24,7 @@ body {
 p {
     font-family: var(--mainFont);
     color: var(--softBlue);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 /** Card **/
@@ -31,14 +32,35 @@ p {
 .card {
     background-color: var(--cardBG);
     max-width: 300px;
-    height: 550px;
+    height: 535px;
     padding: 20px;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .card__image {
+    background-image: url("images/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 310px;
     border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+/**ARREGLAR ESTO**/
+
+.card__image--h{
+    background-color: var(--cyan2);
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__image--h:hover {
+    visibility: hidden;
 }
 
 /** Card__info **/
@@ -49,8 +71,14 @@ p {
     font-size: 22px;
 }
 
+.card__info--title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
 .card__info--text {
     font-weight: 300;
+    margin-bottom: 5px;
 }
 
 /** Card details**/
@@ -109,4 +137,25 @@ p {
 
 .card__seller--text span {
     color: var(--white);
+}
+
+.card__seller--text span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+/** Attribution **/
+
+.attribution {
+    font-family: var(--mainFont);
+    color: var(--softBlue);
+    font-size: 14px;
+}
+
+.attribution a {
+    color: var(--white);
+}
+
+.attribution a:hover {
+    color: var(--cyan);
 }
