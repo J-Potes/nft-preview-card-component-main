@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![Screenshot 2023-02-17 at 17-38-44 Frontend Mentor NFT preview card component](https://user-images.githubusercontent.com/119544731/219811828-69ae1d58-5ca1-4880-95dc-7c866d7bd8a8.png)
 
 ### Links
 
