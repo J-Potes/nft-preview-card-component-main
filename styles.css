@@ -6,6 +6,7 @@
     --line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
     --cyan2: rgba(0, 255, 247,0.5);
+    --cyanActive: rgb(62, 203, 199);
 
     --mainFont: 'Outfit', sans-serif;
 }
@@ -48,8 +49,6 @@ p {
     margin-bottom: 5px;
 }
 
-/**ARREGLAR ESTO**/
-
 .card__image--h{
     background-color: var(--cyan2);
     height: 100%;
@@ -57,10 +56,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 
-.card__image--h:hover {
-    visibility: hidden;
+.card__image:hover .card__image--h {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.card__image:active .card__image--h {
+    background-color: var(--cyanActive);
 }
 
 /** Card__info **/
@@ -74,6 +79,10 @@ p {
 .card__info--title:hover {
     color: var(--cyan);
     cursor: pointer;
+}
+
+.card__info--title:active {
+    color: var(--cyanActive);
 }
 
 .card__info--text {
@@ -144,6 +153,10 @@ p {
     cursor: pointer;
 }
 
+.card__seller--text span:active {
+    color: var(--cyanActive);
+}
+
 /** Attribution **/
 
 .attribution {
@@ -158,4 +171,8 @@ p {
 
 .attribution a:hover {
     color: var(--cyan);
+}
+
+.attribution a:active {
+    color: var(--cyanActive);
 }
