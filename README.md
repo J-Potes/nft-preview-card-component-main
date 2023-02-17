@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-nft-card-component-with-flexbox-wRWC2DMM8K](https://www.frontendmentor.io/solutions/responsive-nft-card-component-with-flexbox-wRWC2DMM8K)
+- Live Site URL: [https://practice-card-component-nft.netlify.app/](https://practice-card-component-nft.netlify.app/)
 
 ## My process
 
